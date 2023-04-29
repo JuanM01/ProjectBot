@@ -1,0 +1,2 @@
+def Compra(pedido):
+    pass
