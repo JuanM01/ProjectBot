@@ -343,7 +343,7 @@ def cancelar_pedido(referencia):
     with open('pedidos.csv', 'r') as archivo_csv:
         reader = csv.reader(archivo_csv)
         for row in reader:
-            if row[5] != referencia:
+            if row[3] != referencia:
                 pedidos.append(row)
 
     with open('pedidos.csv', 'w', newline='') as archivo_csv:
